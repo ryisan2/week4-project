@@ -1,213 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/2d1751ace6.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/2d1751ace6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
     <script src="./app.js" defer></script>
     <title>Ryisan Champion</title>
-  </head>
-  <body>
-    <section class="nav__section">
-      <nav>
-        <div class="nav__bar">
-          <figure class="logo__img click">
-            <img src="./assets/main logo.png" class="logo" alt="" />
-          </figure>
-          <div class="list__box">
-            <ul class="lista">
-              <li class="list__piece">
-                <a
-                  href="#about"
-                  class="link__anchor link__hover-effect link__hover-effect--black click"
-                >
-                  <span class="link__name">About</span></a
-                >
-              </li>
-              <li class="list__piece">
-                <a
-                  href="#projects"
-                  class="link__anchor link__hover-effect link__hover-effect--black click"
-                  ><span class="link__name">Projects</span></a
-                >
-              </li>
-              <li class="list__piece">
-                <a
-                  href="#contact"
-                  class="link__anchor link__hover-effect link__hover-effect--black click"
-                  ><span class="link__name">Contact</span></a
-                >
-              </li>
-              <li class="list__piece">
-                <a
-                  href="#contact"
-                  class="link__anchor link__hover-effect link__hover-effect--black click"
-                  ><i class="fa-solid fa-circle-half-stroke"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+</head>
+
+<!-- --------------------------------------------TOP AREA----------------------------------------------------------- -->
+
+<body>
+    <section id="nav__section">
+        <nav>
+            <div class="nav__bar">
+                <figure class="logo__img click">
+                    <img src="./assets/main logo.png" class="logo" alt="" />
+                </figure>
+                <div class="list__box">
+                    <ul class="lista">
+                        <li class="list__piece">
+                            <a href="#about" class="link__anchor link__hover-effect link__hover-effect--black click">
+                                <span class="link__name">About</span></a>
+                        </li>
+                        <li class="list__piece">
+                            <a href="#projects"
+                                class="link__anchor link__hover-effect link__hover-effect--black click"><span
+                                    class="link__name">Projects</span></a>
+                        </li>
+                        <li class="list__piece">
+                            <a href="#contact"
+                                class="link__anchor link__hover-effect link__hover-effect--black click"><span
+                                    class="link__name">Contact</span></a>
+                        </li>
+                        <li class="list__piece">
+                            <a href="#contact" class="link__hover-effect--black click"><i
+                                    class="fa-solid fa-circle-half-stroke"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </section>
+    <!-- --------------------------------------------TOP AREA----------------------------------------------------------- -->
+
+
     <!-- ------------------------------------------INTRO AREA-------------------------------------------     -->
 
     <header class="contact">
-      <div class="intro">
-        <div class="introbox">
-          <div class="hey">
-            <h1>
-              Hey <br />
-              <span class="red__name">I'm Ryisan.</span>
-            </h1>
-          </div>
-          <div class="bio">
-            <p class="intro__txt">
-              I'm a
-              <span class="red__text">Frontend Software Engineer</span> with a
-              <br />
-              stong passion for building web applications <br />
-              with great user experiences. I love the creativity process and the
-              joy of producing content and websites. Here's a bit more
-              <span class="red__text">about me.</span>
-            </p>
-          </div>
-          <div class="boxy">
-            <div class="icon__container">
-              <a
-                href="https://www.twitter.com/blusharkmedia"
-                class="social__link click"
-                target="_blank"
-                ><i class="fa-brands fa-square-twitter"></i
-              ></a>
-              <a
-                href="https://github.com/ryisan2"
-                class="social__link click"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a
-                href="https://linkedin.com/in/ryisan"
-                class="social__link click"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a
-                href="https://docs.google.com/document/d/1i7Kmn3ot1WATlNoHNBuTD18-me6F2zqYde4HiMXGuNQ/edit"
-                class="social__link click"
-                target="_blank"
-              >
-                <i class="fa-solid fa-file"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-      <button class="click mail__btn">
-          <i class="click fa-solid fa-envelope"></i> 
-    </button>
-    <a href="#projects" class="scroll">
-    <div class="scroll__icon click"></div> <!--We don't need to download this , its already in HTML-->
-    </a>
-  </body>
-</html>
-
-<!---------------------------------------- PROJECTS SECTION ------------------------------------------->
-
-</section>
-<section id="projects">
-  <div class="container">
-    <div class="row">
-      <h1 class="section__title">
-        Here are some of my<span class="purple"> projects</span>
-      </h1>
-      <ul class="projects__list">
-        <li class="projecta">
-          <div class="project_wrapper">
-            <img src="./assets/Screenshot 2024-03-31 at 2.30.15 PM.png" class="project__img" alt="Solanews"
-            
-            <!-- WE NEED TO HAVE AN IMAGE GO OVER THE IMAGE WHEN THE MOUSE GOES
-              OVER IT , SO WE NEED TO HAVE A DIV GO HERE IN-BETWEEN THE IMAGE AND THE FIGURE
-              CLOSING TAG, now lets get to work- -->
-              
-              <div class="projinfo">
-                <h3 class="proj__title">Solanews Network</h3>
-                <h4 class="proj__subtitle">HTML, CSS,JS ,REACT</h4>
-                <p class="proj__paragraph">
-                  Solana Blockchain news reporting website that specialized in
-                  all things crypto
-                </p>
-                <div class="projinfo_links">
-                  <a href="https://github.com/ryisan2" target="_blank" class="about__me-link">
-                    <i class="fa-brands fa-github"></i> 
-                  </a>
-                  <div class="projinfo_links">
-                    <a href="https://solanews.net" target="_blank" class="about__me-link">
-                      <i class="fas fa-link"></i> 
-                    </a>
-                    <li class="projecta">
-                      <div class="project_wrapper">
-                        <img src="./assets/Screenshot 2024-03-31 at 2.30.54 PM.png" class="project__img" alt="Solanews"
-                        
-          <!-- JUST COPY AND PASTED WHAT WAS ABOVE TO CREATE A SECOND WEBSITE FOR THE PORTFOLIO- -->
-          
-          <div class="projinfo">
-            <h3 class="proj__title">Blushark Media</h3>
-            <h4 class="proj__subtitle">HTML, CSS,JS ,REACT</h4>
-            <p class="proj__paragraph">
-              Web3 reporting entity that focuses on web3 gaming, projects, and Artifcial
-              Intelligence
-            </p>
-            <div class="projinfo_links">
-              <a href="https://github.com/ryisan2" target="_blank" class="about__me-link">
-                <i class="fa-brands fa-github"></i> 
-              </a>
-              <div class="projinfo_links">
-                <a href="https://blushark.xyz" target="_blank" class="about__me-link">
-                  <i class="fas fa-link"></i> 
-                </a>
-                <li class="projecta">
-                  <div class="project_wrapper">
-                    <img src="./assets/suprasia.jpeg" class="project__img" alt="Solanews"
-                    
-                    <!-- JUST COPY AND PASTED WHAT WAS ABOVE TO CREATE A SECOND WEBSITE FOR THE PORTFOLIO- -->
-                    
-                    <div class="projinfo">
-                      <h3 class="proj__title">Suprasia Website</h3>
-                      <h4 class="proj__subtitle">HTML, CSS,JS ,REACT</h4>
-                      <p class="proj__paragraph">
-                        Suprasia is a Web3 Content Creation and Consultation company 
-                      </p>
-                      <div class="projinfo_links">
-                        <a href="https://github.com/ryisan2" target="_blank" class="about__me-link">
-                          <i class="fa-brands fa-github"></i> 
+        <div class="intro">
+            <div class="introbox">
+                <div class="hey">
+                    <h1>
+                        Hey <br />
+                        <span class="red__name">I'm Ryisan.</span>
+                    </h1>
+                </div>
+                <div class="bio">
+                    <p class="intro__txt">
+                        I'm a
+                        <span class="red__text">Frontend Software Engineer</span> with a
+                        <br />
+                        strong passion for building web applications <br />
+                        with great user experiences. I love the creativity process and the
+                        joy of producing content and websites. Here's a bit more
+                        <span class="red__text">about me.</span>
+                    </p>
+                </div>
+                <div class="boxy">
+                    <div class="icon__container">
+                        <a href="https://www.twitter.com/blusharkmedia" class="social__link click" target="_blank"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://github.com/ryisan2" class="social__link click" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ryisan" class="social__link click" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://docs.google.com/document/d/1i7Kmn3ot1WATlNoHNBuTD18-me6F2zqYde4HiMXGuNQ/edit"
+                            class="social__link click" target="_blank">
+                            <i class="fa-solid fa-file"></i>
                         </a>
-                        <div class="projinfo_links">
-                          <a href="https://suprasia.xyz" target="_blank" class="about__me-link">
-                            <i class="fas fa-link"></i> 
-                          </a>
-                          <!-- That is how it is done and now we just do it again for the next one -->
-                        </div>
-                      </div>
-                    </div> 
-                    
-                  </li>
-                </ul>
-              </div>
+                    </div>
+                </div>
             </div>
-          </section>
+        </div>
+    </header>
+
+    <button class="click mail__btn">
+        <i class="click fa-solid fa-envelope"></i>
+    </button>
+
+    <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div> <!--We don't need to download this , its already in HTML-->
+    </a>
+    <!-- ----------------------------------------------------CONTACT MODAL -------------------------------------------------------- -->
+    <div class="modal">
+        <div class="modal__half modal__half-left modal__about">
+            <div class="information intro__txt2">
+                <h3><span class="modal__title modal__title--about">Here's A Bit About Me</span></h3>
+                <br>
+                <h4><span class="red__text modal__sub modal__sub--about"> Frontend Software Engineer</span></h4>
+                &nbsp;
+                <p class="modal__para">I'm a <span class="red__text">Frontend Software Engineer</span> that doesn't <br>
+                    believe in
+                    staying in one lane. My passion is true <span class="red__text"> <br> creativity</span> and all of
+                    the great things
+                    that come <br> with that creativity. <br><br>
+                    I currently work on <span class="red__text"> extremely creative</span> marketing <br> problems and
+                    learn from a great team team of
+                    <br> the most <span class="red__text">talented, creative ,</span> and experienced software <br>
+                    engineers, designers,and artists around.
+                </p>
+                <div class="langs">
+
+                    <div class="modal__langs">
+                        <figure>
+                            <img src="./assets/html5 copy.png" class="lang__img" alt="">
+                        </figure>
+                        <span class="lang__name">HTML</span>
+                    </div>
+                    <div class="modal__langs">
+                        <figure>
+                            <img src="./assets/css copy.png" class="lang__img" alt="">
+                        </figure>
+                        <span class="lang__name">CSS</span>
+                    </div>
+                    <div class="modal__langs">
+                        <figure>
+                            <img src="./assets/javascript copy.png" class="lang__img" alt="">
+                        </figure>
+                        <span class="lang__name">JAVA <br> SCRIPT</span>
+                    </div>
+                    <div class="modal__langs">
+                        <figure>
+                            <img src="./assets/react copy.png" class="lang__img" alt="">
+                        </figure>
+                        <span class="lang__name">REACT</span>
+                    </div>
+                    <div class="modal__langs">
+                        <figure>
+                            <img src="./assets/python copy.png" class="lang__img" alt="">
+                        </figure>
+                        <span class="lang__name">PYTHON</span>
+                    </div>
+                    <div class="modal__langs">
+                        <figure>
+                            <img src="./assets/gpt copy.png" class="lang__img" alt="">
+                        </figure>
+                        <span class="lang__name">GPT4</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal__half modal__half-right modal__contact">
+            <h3><span> Let's Speak Together!</span></h3>
+            <br>
+            <h4 class="contact__sub">I'm currently open to new opportunities</h4>
+
+            <form id="contact__form" action="">
+                <div class="form__item">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="input" name="user__name" type="text" id="name" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="name">Email</label>
+                    <input class="input" name="user__email" type="email" id="name" required></input>
+                </div>
+                            <div class="form__item">
+                                <label class="form__label" for="name">Message</label>
+                                <textarea class="input" name="message" type="text" id="name" required></textarea>
+                            </div>
+                            <div class="btn__div">
+                                <button id="contact_submit" class="contact__btn" type="submit"><a href="mailto:ryisan@suprasia.xyz"></a>Send it my way!</button>
+                            </div>
+                        </form>
+                        <!-- Now we are going to make a loading screen for this part of the page -->
+                    <div class="modal_overlay modal__overlay-loading">
+                        <i class="fas fa-spinner"> </i>
+                    </div>
+                </div>
+                    </div>
+                </div>
+    <!-- ----------------------------------------------------CONTACT MODAL -------------------------------------------------------- -->
+
+    <!-- -----------------------------------------------------INTRO AREA---------------------------------------------------------------->
 
 
+    <!----------------------------------------------------- PROJECTS SECTION -------------------------------------------------------->
+    <section id="projects">
+        <div class="proj__container">
+            <div class="row">
+                <h2 class="some__proj"> Here are some of my <span class="red__name"> projects !</span></h2>
+                <ul class="project__list">
+                    <li class="projects">
+                        <div class="proj__wrapper">
+                            <img src="./assets/suprasia copy.jpeg" class=" proj__img" alt="">
+                            <div class="proj__wrapper-bg"></div>
+                            <div class="projinfo">
+                                <h3 class="proj__title">Suprasia Website</h3>
+                                <h4 class="proj__subtitle">HTML, CSS, JS ,REACT</h4>
+                                <p class="proj__paragraph">
+                                    Suprasia is a Web3 content creation, marketing <br> and consultation company
+                                </p>
+                                <div class="projinfo_links">
+                                    <a href="https://github.com/ryisan2" target="_blank" class="about__me-link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://suprasia.xyz" target="_blank" class="about__me-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <!-- That is how it is done and now we just do it again for the next one -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="project__list">
+                    <li class="projects">
+                        <div class="proj__wrapper">
+                            <img src="./assets/Screenshot 2024-03-31 at 2.30.54 PM copy.png" class=" proj__img" alt="">
+                            <div class="proj__wrapper-bg"></div>
+                            <div class="projinfo">
+                                <h3 class="proj__title">Blushark Media</h3>
+                                <h4 class="proj__subtitle">HTML, CSS, JS ,REACT</h4>
+                                <p class="proj__paragraph">
+                                    Focused on reporting on all things web3<br> and crypto
+                                </p>
+                                <div class="projinfo_links">
+                                    <a href="https://github.com/ryisan2" target="_blank" class="about__me-link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://blushark.xyz" target="_blank" class="about__me-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <!-- That is how it is done and now we just do it again for the next one -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="project__list">
+                    <li class="projects">
+                        <div class="proj__wrapper">
+                            <img src="./assets/Screenshot 2024-03-31 at 2.30.54 PM copy.png" class=" proj__img" alt="">
+                            <div class="proj__wrapper-bg"></div>
+                            <div class="projinfo">
+                                <h3 class="proj__title">Blushark Media</h3>
+                                <h4 class="proj__subtitle">HTML, CSS, JS ,REACT</h4>
+                                <p class="proj__paragraph">
+                                    Focused on reporting on all things web3<br> and crypto
+                                </p>
+                                <div class="projinfo_links">
+                                    <a href="https://github.com/ryisan2" target="_blank" class="about__me-link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://blushark.xyz" target="_blank" class="about__me-link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <!-- That is how it is done and now we just do it again for the next one -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------- PROJECTS SECTION -------------------------------------------------->
 
-<!---------------------------------------- PROJECTS SECTION ------------------------------------------->
+
+    <!-- -------------------------------------------------FOOTER AREA------------------------------------------------------- -->
+    <footer class="section footera">
+        <div class="rowa">
+            <a href="#nav__section" class="navy__anchor">
+                <figure>
+                    <img src="./assets/main logo.png" class="logoa" alt="">
+                </figure>
+                <span class="footer__logo--popper">
+                    Top
+                    <i class="fas fa-arrow-up"></i>
+                </span>
+            </a>
+            <div class="contacts">
+                <a href="https://github.com/ryisan2"
+                    class="link__anchor link__hover-effect link__hover-effect--black click link__name-black">Github</a>
+                <a href="https://linkedin.com/in/ryisan"
+                    class="link__anchor link__hover-effect link__hover-effect--black click  link__name-black">Linkedin</a>
+                <a href="mailto: ryisan@suprasia.xyz"
+                    class="link__anchor link__hover-effect link__hover-effect--black click  link__name-black">Email</a>
+                <a href="https://docs.google.com/document/d/1ZDFyhKgEY1FN6J_ajanmrd0EbRx02Nez9MY2JZCgvno/edit?usp=sharing"
+                    class="link__anchor link__hover-effect link__hover-effect--black click  link__name-black"
+                    target="_blank">Resume</a>
+            </div>
+            <div class="copyright">
+                <p class="copy">Copyright @2024 Ryisan Champion</p>
+            </div>
+        </div>
+    </footer>
+    <!-- -------------------------------------------------FOOTER AREA------------------------------------------------------- -->
+
+</body>
+
+</html>
