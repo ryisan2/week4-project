@@ -177,6 +177,7 @@ h1 {
 }
 
 .click {
+  cursor: pointer;
   transition: all 300ms ease;
 }
 
@@ -481,24 +482,42 @@ h1 {
 
 }
 
-.modal__overlay-loading {
-  background-color: blue;
+.modal__overlay {
+
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 80px;
+  justify-content: center;
+  z-index: -1;
 }
 
-.fa-spinner {
+.modal__overlay-loading {
+  background-color: black;
+  font-size: 80px;
+  z-index: -1;
+}
+.modal__overlay-success {
+  background-color: #f06049;
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 700;
+  padding: 28px;
+  font-size: 50px;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
+}
+
+.fa-spinner {  /* spinner image for the animation of loading */
   animation: spin .5s infinite linear;
 }
 
-@keyframes spin {
+@keyframes spin {   /*Animation for the spinning wheel for loading*/
   0% {
     transform: rotate(0);
   }
@@ -506,6 +525,16 @@ h1 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.modal__exit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+ z-index: 100; /*We want to make sure this always shows up */
 }
 
 #contact__form {
