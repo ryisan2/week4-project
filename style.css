@@ -1,3 +1,4 @@
+
 /* ------------------------------------------BASIC CSS------------------------------------------------------- */
 * {
   margin: 0;
@@ -376,6 +377,12 @@ h1 {
   overflow: hidden;
   display: flex;
   visibility: hidden;
+}
+
+.modal__open .modal {
+  visibility: visible;
+box-shadow 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+z-index: ;
 }
 
 .modal__half {

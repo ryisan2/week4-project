@@ -77,8 +77,8 @@
                         I'm a
                         <span class="red__text">Frontend Software Engineer</span> with a
                         <br />
-                        strong passion for building web applications <br />
-                        with great user experiences. I love the creativity process and the
+                        strong passion for building creative web applications 
+                        with great user experiences. <br><br> I love the creativity process and the
                         joy of producing content and websites. Here's a bit more
                         <span class="red__text">about me.</span>
                     </p>
@@ -101,7 +101,7 @@
         </div>
     </header>
 
-    <button class="click mail__btn" onclick="toggleModal">
+    <button class="click mail__btn" onclick="toggleModal()">
         <i class="click fa-solid fa-envelope"></i>
     </button>
 
@@ -193,11 +193,11 @@
                 </div>
             </form>
                         <!-- Now we are going to make a loading screen for this part of the page -->
-                    <div class="modal__overlay modal__overlay-loading ">
+                    <div class="modal_overlay modal__overlay-loading modal__overlay-visible">
                         <i class="fas fa-spinner"> </i>
                     </div>
                     <!-- Now coding the success state after a message has been sent , pretty much the same thing -->
-                  <div class="modal__overlay modal__overlay-success ">
+                  <div class="modal__overlay modal__overlay-success modal__overlay-visible">
                     Thanks for the message! Looking forward to speaking to you very soon! <br> <br>&#128515;
                   </div>
                   <div> <i class="fas fa-times modal__exit click"></i> </div>
@@ -214,7 +214,7 @@
     <section id="projects">
         <div class="proj__container">
             <div class="row">
-                <h2 class="some__proj"> Here are some of my &nbsp; <span class="red__name">projects !</span></h2>
+                <h2 class="some__proj"> Here are some of my <span class="red__name">projects !</span></h2>
                 <ul class="project__list">
                     <li class="projects">
                         <div class="proj__wrapper">

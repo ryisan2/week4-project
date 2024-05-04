@@ -16,10 +16,15 @@ function contact (event) {
 }
 
 
-// now let's crete a function to tggle the modals on and off
+// now let's create a function to toggle the modals on and off
 
+let isModalOpen = false
 function toggleModal () {
-   
-    //toggleModal function to show and hide the modal
-    console.log('clicked')
+   if(isModalOpen) {
+    isModalOpen = false;
+    return document.body.classList.remove('modal__open');
+   }
+   isModalOpen = true;
+   document.body.classList =+ ' modal__open';
+   console.log('modal open')
 }
