@@ -47,6 +47,16 @@ textarea:focus {
   border-color: #f06049;
 }
 
+.modal__open {
+  z-index: 60;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+ visibility: visible;
+}
+
+.container {
+  padding 50px;
+  width: 100%;
+}
 
 h4 {
   font-size: 12px;
@@ -365,7 +375,7 @@ h1 {
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  visibility: hidden;
 }
 
 .modal__half {
@@ -492,7 +502,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1;
 }
 
 .modal__overlay-loading {
@@ -500,6 +509,7 @@ h1 {
   font-size: 80px;
   z-index: -1;
 }
+
 .modal__overlay-success {
   background-color: #f06049;
   text-align: center;
@@ -507,14 +517,16 @@ h1 {
   font-weight: 700;
   padding: 28px;
   font-size: 50px;
+  z-index: -1;
 }
 
-.modal__overlay--visible {
+.modal__overlay-visible {
   z-index: 1;
 }
 
 .fa-spinner {  /* spinner image for the animation of loading */
   animation: spin .5s infinite linear;
+  display: flex;
 }
 
 @keyframes spin {   /*Animation for the spinning wheel for loading*/
