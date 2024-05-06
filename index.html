@@ -9,20 +9,19 @@
     <script src="https://kit.fontawesome.com/2d1751ace6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet" />
     <title>Ryisan Champion</title>
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "LwKeSJJC1tZeCru0b",
-      });
-   })();
-    
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "LwKeSJJC1tZeCru0b",
+            });
+        })();
+    </script>
 </head>
 
 <!-- --------------------------------------------TOP AREA----------------------------------------------------------- -->
@@ -78,8 +77,8 @@
                         I'm a
                         <span class="red__text">Frontend Software Engineer</span> with a
                         <br />
-                        strong passion for building creative web applications 
-                        with great user experiences. <br><br> I love the creativity process and the
+                        strong passion for building creative web applications
+                        with great user experiences. <br> <br> I love the creativity process and the
                         joy of producing content and websites. Here's a bit more
                         <span class="red__text">about me.</span>
                     </p>
@@ -109,7 +108,9 @@
     <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div> <!--We don't need to download this , its already in HTML-->
     </a>
+
     <!-- ----------------------------------------------------CONTACT MODAL -------------------------------------------------------- -->
+   <section>
     <div class="modal">
         <div class="modal__half modal__half-left modal__about">
             <div class="information intro__txt2">
@@ -173,39 +174,39 @@
             <h3><span>Let's Speak Together!</span></h3>
             <br>
             <h4 class="contact__sub">I'm currently open to new opportunities</h4>
-        
+
             <form id="contact__form" onsubmit="contact(event)">
-                <div class="form__item">
-                    <label class="form__label" for="user_name">Name</label>
-                    <input class="input" name="user_name" type="text" id="user_name" >
-                </div>
-                <div class="form__item">
-                    <label class="form__label" for="user_email">Email</label>
-                    <input class="input" name="user_email" type="email" id="user_email" >
-                </div>
-                <div class="form__item">
-                    <label class="form__label" for="message">Message</label>
-                    <textarea class="input" name="message" id="message" ></textarea>
-                </div>
-                <div class="btn__div">
-                    <button id="contact_submit" class="contact__btn click" type="submit">
-                        Send it my way!
-                    </button>
-                </div>
-            </form>
-                        <!-- Now we are going to make a loading screen for this part of the page -->
-                    <div class="modal_overlay modal__overlay-loading modal__overlay-visible">
-                        <i class="fas fa-spinner"> </i>
-                    </div>
-                    <!-- Now coding the success state after a message has been sent , pretty much the same thing -->
-                  <div class="modal__overlay modal__overlay-success modal__overlay-visible">
-                    Thanks for the message! Looking forward to speaking to you very soon! <br> <br>&#128515;
-                  </div>
-                  <div> <i class="fas fa-times modal__exit click"></i> </div>
-                </div>
-                    </div>
-                </div>
+            <div class="form__item">
+                <label class="form__label" for="user_name">Name</label>
+                <input class="input" name="user_name" type="text" id="user_name">
             </div>
+            <div class="form__item">
+                <label class="form__label" for="user_email">Email</label>
+                <input class="input" name="user_email" type="email" id="user_email">
+            </div>
+            <div class="form__item">
+                <label class="form__label" for="message">Message</label>
+                <textarea class="input" name="message" id="message"></textarea>
+            </div>
+            <div class="btn__div">
+                <button id="contact_submit" class="contact__btn click" type="submit">
+                Send it my way!
+                </button>
+            </div>
+            </form>
+            <!-- Now we are going to make a loading screen for this part of the page -->
+            <div class="modal_overlay modal__overlay-loading ">
+            <i class="fas fa-spinner"> </i>
+            </div>
+            <!-- Now coding the success state after a message has been sent , pretty much the same thing -->
+            <div class="modal__overlay modal__overlay-success modal__overlay-visible">
+            Thanks for the message! Looking forward to speaking to you very soon! <br> <br>&#128515;
+            </div>
+            <div> <i class="fas fa-times modal__exit click"></i> </div>
+        </div>
+        </div>
+    </div>
+    </secton>
     <!-- ----------------------------------------------------CONTACT MODAL -------------------------------------------------------- -->
 
     <!-- -----------------------------------------------------INTRO AREA---------------------------------------------------------------->
