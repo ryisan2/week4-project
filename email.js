@@ -25,6 +25,6 @@ function toggleModal () {
     return document.body.classList.remove('modal__open');
    }
    isModalOpen = true;
-   document.body.classList =+ ' modal__open';
+   document.body.classList += ' modal__open';
    console.log('modal open')
 }
