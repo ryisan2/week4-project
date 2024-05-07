@@ -1,4 +1,5 @@
 
+
 function contact (event) {
     event.preventDefault()
     const loading = document.querySelector('.modal__overlay-loading')
@@ -28,3 +29,4 @@ function toggleModal () {
    document.body.classList += ' modal__open';
    console.log('modal open')
 }
+
