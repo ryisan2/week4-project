@@ -44,7 +44,7 @@
                                 class="link__anchor link__hover-effect link__hover-effect--black click"><span
                                     class="link__name">Projects</span></a>
                         </li>
-                        <li class="list__piece">
+                        <li class="list__piece" onclick="toggleModal()">
                             <a href="#contact"
                                 class="link__anchor link__hover-effect link__hover-effect--black click"><span
                                     class="link__name">Contact</span></a>
@@ -80,7 +80,7 @@
                         strong passion for building creative web applications
                         with great user experiences. <br> <br> I love the creativity process and the
                         joy of producing content and websites. Here's a bit more
-                        <span class="red__text">about me.</span>
+                        <span class="red__text click" onclick="toggleModal()">about me.</span>
                     </p>
                 </div>
                 <div class="boxy">
@@ -171,22 +171,22 @@
             </div>
         </div>
         <div class="modal__half modal__half-right modal__contact">
-            <h3><span>Let's Speak Together!</span></h3>
+            <h3 class="contact__header"><span>Let's Speak Together!</span></h3>
             <br>
             <h4 class="contact__sub">I'm currently open to new opportunities</h4>
 
             <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
-                <label class="form__label" for="user_name">Name</label>
-                <input class="input" name="user_name" type="text" id="user_name">
+                <label class="form__label"">Name</label>
+                <input class="input" name="user_name" type="text" id="user_name" required>
             </div>
             <div class="form__item">
-                <label class="form__label" for="user_email">Email</label>
-                <input class="input" name="user_email" type="email" id="user_email">
+                <label class="form__label">Email</label>
+                <input class="input" name="user_email" type="email" id="user_email" required>
             </div>
             <div class="form__item">
-                <label class="form__label" for="message">Message</label>
-                <textarea class="input" name="message" id="message"></textarea>
+                <label class="form__label" >Message</label>
+                <textarea class="input" name="message" id="message" required></textarea>
             </div>
             <div class="btn__div">
                 <button id="contact_submit" class="contact__btn click" type="submit">
@@ -195,14 +195,14 @@
             </div>
             </form>
             <!-- Now we are going to make a loading screen for this part of the page -->
-            <div class="modal_overlay modal__overlay-loading ">
+            <div class="modal_overlay modal__overlay-loading">
             <i class="fas fa-spinner"> </i>
             </div>
             <!-- Now coding the success state after a message has been sent , pretty much the same thing -->
-            <div class="modal__overlay modal__overlay-success modal__overlay-visible">
+            <div class="modal__overlay modal__overlay-success">
             Thanks for the message! Looking forward to speaking to you very soon! <br> <br>&#128515;
             </div>
-            <div> <i class="fas fa-times modal__exit click"></i> </div>
+            <div> <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i> </div>
         </div>
         </div>
     </div>
@@ -216,7 +216,7 @@
     <section id="projects">
         <div class="proj__container">
             <div class="row">
-                <h2 class="some__proj"> Here are some of my <span class="red__name">projects !</span></h2>
+                <h2 class="some__proj"> Here are some of my <span class="red__name"> &nbsp projects !</span></h2>
                 <ul class="project__list">
                     <li class="projects">
                         <div class="proj__wrapper">
