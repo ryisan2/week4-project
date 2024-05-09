@@ -1,3 +1,17 @@
+let contrastToggle=false
+
+function toggleBg() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList.add("dark-mode");
+  }
+  else {
+    document.body.classList.remove("dark-mode");
+  }
+}
+ 
+
+
 function contact(event) {
   event.preventDefault()
   const loading = document.querySelector(".modal__overlay-loading")
@@ -39,3 +53,4 @@ function toggleModal() {
   document.body.classList += " modal__open"
   console.log("modal open")
 }
+

@@ -67,7 +67,7 @@ h4 {
   padding-top: 50px;
 }
 
-/* ----------------When we use the form we need to hide things so lets do that now  ------------- */
+/* ---------------------When we use the form we need to hide things so lets do that now  ----------------------------------- */
 
 nav,
 .scroll,
@@ -85,7 +85,55 @@ nav,
   transition: all 400ms ease;
 }
 
-/*------------------------------- things are now hidden -------------------------------- */
+/*----------------------------------------------- things are now hidden -------------------------------------------------- */
+
+/* ---------------------------------------------------------DARK MODE------------------------------------------------------- */ */
+
+.dark-mode .list__piece,
+.dark-mode .nav__bar, 
+.dark-mode .nav__section,
+.dark-mode .introbox,
+.dark-mode .icon__container,
+.dark-mode .intro__txt,
+.dark-mode .intro__txt2,  
+.dark-mode .h1,
+.dark-mode .modal__title,
+.dark-mode .modal__subtitle,
+.dark-mode .modal__para, {
+  color: white;
+
+
+}
+
+.dark-mode .modal__contact,
+.dark-mode .input{
+  background-color: #f06049;
+}
+
+
+.dark-mode .contact__btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .input:hover,
+.dark-mode .textarea:hover {
+  border-color: black;
+}
+
+.dark-mode .section {
+  background-color: black;
+
+}
+
+
+
+
+/* ----------------------------------------------------------DARK MODE------------------------------------------------------- */ */
+
+
+
+
 
 .user__name {
   margin-top: 50px;
@@ -447,6 +495,7 @@ h1 {
   background-color: rgb(246, 245, 245);
   overflow: hidden;
   transform: translateX(-110%);
+  padding: 15px;
 }
 
 .modal__top {
