@@ -3,7 +3,7 @@ let contrastToggle=false
 function toggleBg() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
-    document.body.classList.add("dark-mode");
+    document.body.classList += " dark-mode";
   }
   else {
     document.body.classList.remove("dark-mode");

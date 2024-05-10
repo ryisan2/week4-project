@@ -11,7 +11,7 @@ html {
 }
 
 section {
-  background-color: rgb(246, 245, 245);
+  /* background-color: rgb(246, 245, 245); */
 }
 
 a {
@@ -89,27 +89,37 @@ nav,
 
 /* ---------------------------------------------------------DARK MODE------------------------------------------------------- */ */
 
+.dark-mode .proj__title,
+.dark-mode .contact,
+.dark-mode .header,
+.dark-mode .proj__subtitle,
+.dark-mode .proj__paragraph,
+.dark-mode .link__name, 
 .dark-mode .list__piece,
-.dark-mode .nav__bar, 
 .dark-mode .nav__section,
 .dark-mode .introbox,
+.dark-mode .intro,
 .dark-mode .icon__container,
 .dark-mode .intro__txt,
 .dark-mode .intro__txt2,  
+.dark-mode .introbox,
 .dark-mode .h1,
 .dark-mode .modal__title,
 .dark-mode .modal__subtitle,
-.dark-mode .modal__para, {
+.dark-mode .modal__para,
+.dark-mode .contact{
+  background-color: black;
   color: white;
-
-
 }
 
 .dark-mode .modal__contact,
 .dark-mode .input{
-  background-color: #f06049;
+  background-color: green;
 }
 
+.dark-mode .hey {
+  color: white;
+}
 
 .dark-mode .contact__btn:hover {
   background-color: black;
@@ -117,7 +127,9 @@ nav,
 }
 
 .dark-mode .input:hover,
-.dark-mode .textarea:hover {
+.dark-mode .textarea:hover
+.dark-mode .textarea:focus,
+.dark-mode .input:focus {
   border-color: black;
 }
 
@@ -126,12 +138,35 @@ nav,
 
 }
 
-.dark-mode .scroll__icon {
+.dark-mode .scroll__icon,
+.dark-mode .scroll,
+.dark-mode .scroll__icon::after {
   border: 2px solid white;
 }
 
+.dark-mode .modal__overlay-loading {
+  background-color:green;
+}
+
+.dark-mode .modal__overlay-success {
+  background-color: black;
+  color: white;
+} 
+
+.dark-mode .footera,
+.dark-mode .footer__logo--popper,
+.dark-mode .contacts,
+.dark-mode .copyright,
+.dark-mode .link__name-black {
+  color: black;
+  background-color: white;
+}
 
 
+.dark-mode .mail__btn {
+  background-color: white;
+  color: black;
+}
 /* ----------------------------------------------------------DARK MODE------------------------------------------------------- */ */
 
 
@@ -307,6 +342,7 @@ h1 {
   /* border: 3px dotted red; */
   margin: 0 20px;
   padding: 0 20px;
+  background: white;
 }
 
 .lista {
@@ -330,16 +366,24 @@ h1 {
 /* ------------------------------------------NAV CSS----------------------------------------------------- */
 
 /* ------------------------------------------INTRO CSS----------------------------------------------------- */
-#contact {
+.contact {
   min-height: 100vh;
   margin-bottom: 200px;
+  border: 3px solid blue;
+
+}
+
+.intro {
+background-color: white;
+border: 3px solid blue;
+
 }
 
 .introbox {
   display: flex;
   flex: 1;
   flex-direction: column;
-  /* border: 3px solid blue; */
+  border: 3px solid blue;
   width: 50%;
   max-width: 500px;
   margin: 0 30px;
@@ -348,6 +392,7 @@ h1 {
   margin-top: 400px;
   margin-left: 160px;
   position: relative;
+  background-color: white;
 }
 
 .icon__container {
