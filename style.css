@@ -107,6 +107,7 @@ nav,
 .dark-mode .modal__title,
 .dark-mode .modal__subtitle,
 .dark-mode .modal__para,
+.dark-mode .proj__container,
 .dark-mode .contact{
   background-color: black;
   color: white;
@@ -360,7 +361,7 @@ h1 {
 }
 
 .nav__section {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* ------------------------------------------NAV CSS----------------------------------------------------- */
@@ -368,8 +369,7 @@ h1 {
 /* ------------------------------------------INTRO CSS----------------------------------------------------- */
 .contact {
   min-height: 100vh;
-  margin-bottom: 200px;
-  /* border: 3px solid blue; */
+  border: 3px solid blue;
 
 }
 
@@ -388,9 +388,9 @@ background-color: white;
   max-width: 500px;
   margin: 0 30px;
   padding: 0 30px;
-  margin-bottom: 400px;
-  margin-top: 400px;
-  margin-left: 160px;
+  padding-bottom: 400px;
+  padding-top: 400px;
+  padding-left: 160px;
   position: relative;
   background-color: white;
 }
@@ -759,13 +759,13 @@ background-color: white;
 /* ---------------------------------------------MODAL CSS------------------------------------------------------- */
 
 /* ------------------------------------------PROJECT CSS----------------------------------------------------- */
-#projects {
+/* #projects {
   margin-bottom: 200px;
-}
+} */
 
 .proj__container {
   padding-top: 50px;
-  margin-top: 500px;
+  /* margin-top: 500px; */
   /* border: 3px solid orange; */
 }
 
