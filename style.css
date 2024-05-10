@@ -108,6 +108,9 @@ nav,
 .dark-mode .modal__subtitle,
 .dark-mode .modal__para,
 .dark-mode .proj__container,
+.dark-mode .proj__paragraph,
+.dark-mode .nav__bar,
+.dark-mode .nav__section
 .dark-mode .contact{
   background-color: black;
   color: white;
