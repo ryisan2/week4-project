@@ -1016,31 +1016,67 @@ width = 80vw */
 
 /*------------------------------------------MAKING WEBSITE RESPONSIVE----------------------------------------------------- */
 
-@media (max-width: 768px) /* This is going to be for smartphones, tables, and large smartphones*/
-.title { 
-  font-size: 80px;
-}
+@media (max-width: 768px) /* This is going to be for smartphones, tables, and large smartphones */
+
+
 
 .intro__txt {
+  font-size: 20px;
+}
+ /* Add this closing curly brace */
+
+ .intro__txt {
   font-size: 20px;
 }
 
 .btn__div {
 
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .introbox {
  font-size: 40px;
+ display: flex;
+ justify-content: center;
+  align-content: center;
+  /* align-items: center; */
 }
 
 .social__link {
   margin-left: 30px;
 }
 
+.modal__about {
+  padding: 20px;
+}
 
+.modal__para {
+  font-size: 16px;
+  text-align: start;
+}
 
+.intro__txt2 {
+  font-size: 18px;
+  /* text-align: center; */
+  width: 100%;
+}
 
+.lang__img {
+  height: 40px;
+  width: 40px;
+  margin-left: 15px;
+}
 
+.lang__name {
+  font-size: 12px;
+}
+
+.form__label {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.modal__contact {
+  padding-top: 120px;
+}
 
 /*------------------------------------------MAKING WEBSITE RESPONSIVE----------------------------------------------------- */
