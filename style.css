@@ -10,10 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  /* background-color: rgb(246, 245, 245); */
-}
-
 a {
   text-decoration: none;
 }
@@ -348,6 +344,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   /* border: 3px dotted red; */
+  width:100%;
   margin: 0 20px;
   padding: 0 20px;
   border-bottom: 2px solid black;
@@ -1015,14 +1012,27 @@ width = 80vw */
 
 
 /*------------------------------------------MAKING WEBSITE RESPONSIVE----------------------------------------------------- */
+@media (max-width: 880px){
+
+  .form__item {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .contact__btn  {
+    margin-left: 10px;
+  
+  }
+
+}
+
+
+
 
 @media (max-width: 768px) /* This is going to be for smartphones, tables, and large smartphones */
+{
+  
 
-
-
-.intro__txt {
-  font-size: 20px;
-}
  /* Add this closing curly brace */
 
  .intro__txt {
@@ -1046,12 +1056,27 @@ width = 80vw */
   margin-left: 30px;
 }
 
+
+.modal{
+  top: 0;
+  left: 0;
+  width: 100%;
+ height: auto;
+ flex-direction: column-reverse;
+ border-radius: 0;
+}
+
+.modal__half {
+  width: 100%;
+  flex-direction: column;
+}
+
 .modal__about {
   padding: 20px;
 }
 
 .modal__para {
-  font-size: 16px;
+  font-size: 18px;
   text-align: start;
 }
 
@@ -1061,9 +1086,13 @@ width = 80vw */
   width: 100%;
 }
 
+.introbox {
+  padding-left: 80px;
+}
+
 .lang__img {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   margin-left: 15px;
 }
 
@@ -1072,11 +1101,119 @@ width = 80vw */
 }
 
 .form__label {
-  font-size: 16px;
-  padding-left: 10px;
+  font-size: 20px;
 }
 .modal__contact {
   padding-top: 120px;
 }
+
+.modal__langs{
+  display: flex;
+  justify-content: center;
+  align-content: center;  
+  align-items: center;
+}
+
+/*----- small phones----*/
+
+@media (max-width: 480px) {
+  .intro__txt {
+    font-size: 18px;
+  }
+
+.introbox { 
+  padding-left: 0;
+}
+
+
+  .intro__txt2 {
+    font-size: 14px;
+  }
+
+  .modal__about {
+    padding: 10px;
+  }
+
+  .modal__para {
+    font-size: 16px;
+  }
+
+  .lang__img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+  }
+
+  .lang__name {
+    font-size: 10px;
+  }
+
+  .form__label {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .modal__contact {
+    padding-top: 100px;
+  }
+
+  .modal__langs {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .some__proj{  
+    font-size: 24px;
+  
+  }
+
+  .link__name-about {
+display: none;
+  }
+
+  .nav__bar {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+  }
+
+  .logo__img {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+  }
+
+  .contact__input-name {
+ max-height: 80lvh;
+  }
+
+  .projinfo {
+ display: flex;
+ justify-content: center;
+}
+
+.proj__paragraph {
+
+  display: none;
+}
+
+.proj__title {
+  font-size: 40px;
+
+}
+
+.proj__subtitle {
+  font-size: 24px;
+}
+
+.fa-github,
+.fa-link
+{
+  font-size: 32px;
+  padding-left: 10px;
+}
+
+
 
 /*------------------------------------------MAKING WEBSITE RESPONSIVE----------------------------------------------------- */
