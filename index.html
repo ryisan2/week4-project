@@ -5,32 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./email.js"></script>
     <script src="https://kit.fontawesome.com/2d1751ace6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet" />
-    <title>Ryisan Champion</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "LwKeSJJC1tZeCru0b",
-            });
-        })();
-    </script>
-</head>
+   
 
 <!-- --------------------------------------------TOP AREA----------------------------------------------------------- -->
 
 <body >
-    <section class="nav__section">
+    <section class="nav__section" onmousemove="moveBg(event)">
         <nav>
             <div class="nav__bar">
-                <figure class="logo__img click">
+                <figure class="logo__img click" onclick="toggleModal()">
                     <img src="./assets/main logo.png" class="logo" alt="" />
                 </figure>
                 <div class="list__box">
@@ -62,13 +51,13 @@
 
 
     <!-- ------------------------------------------INTRO AREA-------------------------------------------     -->
-
+<section class="new__head" onmousemove="moveBg(event)">
     <header class="contact">
         <div class="intro">
             <div class="introbox">
                 <div class="hey">
                     <h1>
-                        Hey <br />
+                        <span class="hey2">Hey</span> <br />
                         <span class="red__name">I'm Ryisan.</span>
                     </h1>
                 </div>
@@ -108,9 +97,10 @@
     <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div> <!--We don't need to download this , its already in HTML-->
     </a>
+</section>
 
     <!-- ----------------------------------------------------CONTACT MODAL -------------------------------------------------------- -->
-   <section>
+   <section >
     <div class="modal">
         <div class="modal__half modal__half-left modal__about">
             <div class="information intro__txt2">
@@ -206,14 +196,24 @@
         </div>
         </div>
     </div>
-    </secton>
-    <!-- ----------------------------------------------------CONTACT MODAL -------------------------------------------------------- -->
+    <img src="./assets/semi circle.svg" class="shape shape--0">
+    <img src="./assets/circle.svg" class="shape shape--1">
+    <img src="./assets/squiggly.svg" class="shape shape--2">
+    <img src="./assets/circle.svg" class="shape shape--3">
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7">
+    <img src="./assets/semi circle.svg" class="shape shape--8">
+   
+</section>
+<!-- ----------------------------------------------------CONTACT MODAL -------------------------------------------------------- -->
 
     <!-- -----------------------------------------------------INTRO AREA---------------------------------------------------------------->
 
 
     <!----------------------------------------------------- PROJECTS SECTION -------------------------------------------------------->
-    <section id="projects">
+    <section id="projects"  onmousemove="moveBg(event)"">
         <div class="proj__container">
             <div class="row">
                 <h2 class="some__proj"> Here are some of my <span class="red__name"> &nbsp projects !</span></h2>
@@ -324,7 +324,18 @@
         </div>
     </footer>
     <!-- -------------------------------------------------FOOTER AREA------------------------------------------------------- -->
-
+    <script src="./email.js"></script>
+    <title>Ryisan Champion</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "LwKeSJJC1tZeCru0b",
+            });
+        })();
+    </script>
+</head>
 </body>
 
 </html>

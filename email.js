@@ -1,9 +1,28 @@
+const scaleFactor =1/20; //this is the scale factor for the movement of the shapes
+
+function moveBg(event) {
+  const shapes = document.querySelectorAll(".shape")
+  const x = event.clientX * scaleFactor; 
+  const y = event.clientY * scaleFactor;
+  
+  for ( let i = 0; i < shapes.length; i++) { //we loop through the shapes and apply the transform property to each shape
+  const isOdd = i % 2 !== 0;
+  const boolInt= isOdd ? 1 : -1; //we check if the index is odd or even and apply the oddInt to the transform property
+  shapes[i].style.transform = `translate(${x * boolInt}px, ${y*boolInt}px)` //we apply the transform property to the shape
+  console.log(x, y)
+  }
+}
+
+
+
+
+
 let contrastToggle=false
 
 function toggleBg() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
-    document.body.classList += " dark-mode";
+    document.body.classList.add("dark-mode");
   }
   else {
     document.body.classList.remove("dark-mode");
@@ -43,14 +62,16 @@ function contact(event) {
 
 // now let's create a function to toggle the modals on and off
 
-let isModalOpen = false
+let isModalOpen = false;
+
 function toggleModal() {
+  isModalOpen = !isModalOpen; // Toggle the modal state
+  
   if (isModalOpen) {
-    isModalOpen = false
-    return document.body.classList.remove("modal__open")
+    document.body.classList.add("modal__open");
+    console.log("modal open");
+  } else {
+    document.body.classList.remove("modal__open");
   }
-  isModalOpen = true
-  document.body.classList += " modal__open"
-  console.log("modal open")
 }
 

@@ -79,7 +79,8 @@ nav,
 
 .modal__open nav, 
 .modal__open .scroll,
-.modal__open .header {
+.modal__open .header,
+.modal__open .introbox {
   opacity: 0;
   visibility: hidden;
   transition: all 400ms ease;
@@ -87,41 +88,34 @@ nav,
 
 /*----------------------------------------------- things are now hidden -------------------------------------------------- */
 
-/* ---------------------------------------------------------DARK MODE------------------------------------------------------- */ */
+/* ---------------------------------------------------------DARK MODE------------------------------------------------------- */ 
 
-.dark-mode .proj__title,
-.dark-mode .contact,
-.dark-mode .header,
-.dark-mode .proj__subtitle,
-.dark-mode .proj__paragraph,
-.dark-mode .link__name, 
-.dark-mode .list__piece,
-.dark-mode .nav__section,
-.dark-mode .introbox,
-.dark-mode .intro,
-.dark-mode .icon__container,
-.dark-mode .intro__txt,
-.dark-mode .intro__txt2,  
-.dark-mode .introbox,
-.dark-mode .h1,
-.dark-mode .modal__title,
-.dark-mode .modal__subtitle,
-.dark-mode .modal__para,
-.dark-mode .proj__container,
-.dark-mode .proj__paragraph,
-.dark-mode .nav__bar,
-.dark-mode .nav__section
-.dark-mode .contact{
-  background-color: black;
-  color: white;
+
+.dark-mode .nav__bar {
+border-bottom: 2px solid #f06049;
 }
 
 .dark-mode .modal__contact,
-.dark-mode .input{
+.dark-mode .input {
   background-color: green;
 }
 
-.dark-mode .hey {
+.dark-mode .link__name {
+  color: white;
+}
+
+.dark-mode .intro__txt {
+  color: white;
+}
+
+.dark-mode h2 {
+  color: white;
+}
+.dark-mode .hey2 {
+  color: white;
+}
+
+.dark-mode .fa-circle-half-stroke {
   color: white;
 }
 
@@ -137,15 +131,25 @@ nav,
   border-color: black;
 }
 
-.dark-mode .section {
+.dark-mode section {
   background-color: black;
 
+}
+
+.dark-mode a {
+  color: white;
+
+}
+
+.dark-mode .link__hover-effect--white {
+  color: white;
 }
 
 .dark-mode .scroll__icon,
 .dark-mode .scroll,
 .dark-mode .scroll__icon::after {
   border: 2px solid white;
+  border-radius: 40%;
 }
 
 .dark-mode .modal__overlay-loading {
@@ -153,7 +157,7 @@ nav,
 }
 
 .dark-mode .modal__overlay-success {
-  background-color: black;
+  background-color: #f06049;
   color: white;
 } 
 
@@ -175,7 +179,7 @@ nav,
 
 
 
-
+/* -----------------------------------------------------------BASIC CSS------------------------------------------------------- */ */
 
 .user__name {
   margin-top: 50px;
@@ -322,7 +326,7 @@ h1 {
 
 .link__hover-effect--black:after {
   /* created for when we have a non-black background */
-  background-color: #242424;
+  background-color: #f06049;
 }
 
 .link__hover-effect:hover:after {
@@ -346,7 +350,7 @@ h1 {
   /* border: 3px dotted red; */
   margin: 0 20px;
   padding: 0 20px;
-  background: white;
+  border-bottom: 2px solid black;
 }
 
 .lista {
@@ -372,12 +376,11 @@ h1 {
 /* ------------------------------------------INTRO CSS----------------------------------------------------- */
 .contact {
   min-height: 100vh;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 
 }
 
 .intro {
-background-color: white;
 /* border: 3px solid blue; */
 
 }
@@ -391,11 +394,10 @@ background-color: white;
   max-width: 500px;
   margin: 0 30px;
   padding: 0 30px;
-  padding-bottom: 400px;
-  padding-top: 400px;
+  padding-bottom: 20px;
+  padding-top: 200px;
   padding-left: 160px;
   position: relative;
-  background-color: white;
 }
 
 .icon__container {
@@ -768,6 +770,7 @@ background-color: white;
 
 .proj__container {
   padding-top: 50px;
+  padding-bottom: 50px;
   /* margin-top: 500px; */
   /* border: 3px solid orange; */
 }
@@ -885,6 +888,7 @@ background-color: white;
 
 .footera {
   background-color: rgb(0, 0, 0);
+  padding-bottom: 50px;
 }
 
 .logoa {
@@ -920,7 +924,7 @@ background-color: white;
 
 .footer__logo--popper {
   font-size: 20px;
-  color: white;
+  color: #f06049;
   position: absolute;
   right: 0;
   top: 50px;
@@ -945,4 +949,98 @@ background-color: white;
 
 /*---------------------------------------END OF THE FOOTER -------------------------------------------*/
 
+/* -----------------------------------------SHAPES CSS----------------------------------------------------- */
+
+/* shapes on the first row 
+height= 15vh
+
+shapes on the second row
+heign= 50vh
+
+shapes on the third 
+height= 80vh
+
+shapes on the first column
+width= 5vw
+
+shapes on second column
+width = 50vw 
+
+shapes on the third column
+width = 80vw */
+
+.shape {
+  position: fixed;
+}
+
+.shape--0 {
+  top: 15vh;
+  left: 5vw;
+}
+.shape--1 {
+  top: 15vh;
+  left: 45vw;
+}
+.shape--2 {
+  top: 15vh;
+  left: 80vw;
+}
+.shape--3 {
+  top: 50vh;
+  left: 5vw;
+}
+.shape--4 {
+  top: 50vh;
+  left: 45vw;
+}
+.shape--5 {
+  top: 50vh;
+  left: 80vw;
+}
+.shape--6 {
+  top: 80vh;
+  left: 5vw;
+}
+.shape--7 {
+  top: 80vh;
+  left: 45vw;
+}
+.shape--8 {
+  top: 80vh;
+  left: 80vw;
+}
+
+
 /* ------------------------------------------PROJECT CSS----------------------------------------------------- */
+
+
+/*------------------------------------------MAKING WEBSITE RESPONSIVE----------------------------------------------------- */
+
+@media (max-width: 768px) /* This is going to be for smartphones, tables, and large smartphones*/
+.title { 
+  font-size: 80px;
+}
+
+.intro__txt {
+  font-size: 20px;
+}
+
+.btn__div {
+
+  padding-left: 5px;
+}
+
+.introbox {
+ font-size: 40px;
+}
+
+.social__link {
+  margin-left: 30px;
+}
+
+
+
+
+
+
+/*------------------------------------------MAKING WEBSITE RESPONSIVE----------------------------------------------------- */
