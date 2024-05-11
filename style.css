@@ -1,13 +1,100 @@
+/* ---------------------------------------------------------DARK MODE------------------------------------------------------- */
+
+.dark-mode .nav__bar {
+  border-bottom: 2px solid #f06049;
+}
+
+.dark-mode .modal__contact,
+.dark-mode .input {
+  background-color: green;
+}
+
+.dark-mode .link__name {
+  color: white;
+}
+
+.dark-mode .intro__txt {
+  color: white;
+}
+
+.dark-mode h2 {
+  color: white;
+}
+.dark-mode .hey2 {
+  color: white;
+}
+
+.dark-mode .fa-circle-half-stroke {
+  color: white;
+}
+
+.dark-mode .contact__btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .input:hover,
+.dark-mode .textarea:hover .dark-mode .textarea:focus,
+.dark-mode .input:focus {
+  border-color: black;
+}
+
+.dark-mode section {
+  background-color: black;
+}
+
+.dark-mode a {
+  color: white;
+}
+
+.dark-mode .link__hover-effect--white {
+  color: white;
+}
+
+.dark-mode .scroll__icon,
+.dark-mode .scroll,
+.dark-mode .scroll__icon::after {
+  border: 2px solid white;
+  border-radius: 40%;
+}
+
+.dark-mode .modal__overlay-loading {
+  background-color: green;
+}
+
+.dark-mode .modal__overlay-success {
+  background-color: #f06049;
+  color: white;
+}
+
+.dark-mode .footera,
+.dark-mode .footer__logo--popper,
+.dark-mode .contacts,
+.dark-mode .copyright,
+.dark-mode .link__name-black {
+  color: black;
+  background-color: white;
+}
+
+.dark-mode .mail__btn {
+  background-color: white;
+  color: black;
+}
+/* ----------------------------------------------------------DARK MODE------------------------------------------------------- */
+*/
+
 /* ------------------------------------------BASIC CSS------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: 1200ms smooth;
 }
 
 a {
@@ -73,7 +160,7 @@ nav,
   transition: all 600ms 600ms;
 }
 
-.modal__open nav, 
+.modal__open nav,
 .modal__open .scroll,
 .modal__open .header,
 .modal__open .introbox {
@@ -83,99 +170,6 @@ nav,
 }
 
 /*----------------------------------------------- things are now hidden -------------------------------------------------- */
-
-/* ---------------------------------------------------------DARK MODE------------------------------------------------------- */ 
-
-
-.dark-mode .nav__bar {
-border-bottom: 2px solid #f06049;
-}
-
-.dark-mode .modal__contact,
-.dark-mode .input {
-  background-color: green;
-}
-
-.dark-mode .link__name {
-  color: white;
-}
-
-.dark-mode .intro__txt {
-  color: white;
-}
-
-.dark-mode h2 {
-  color: white;
-}
-.dark-mode .hey2 {
-  color: white;
-}
-
-.dark-mode .fa-circle-half-stroke {
-  color: white;
-}
-
-.dark-mode .contact__btn:hover {
-  background-color: black;
-  color: white;
-}
-
-.dark-mode .input:hover,
-.dark-mode .textarea:hover
-.dark-mode .textarea:focus,
-.dark-mode .input:focus {
-  border-color: black;
-}
-
-.dark-mode section {
-  background-color: black;
-
-}
-
-.dark-mode a {
-  color: white;
-
-}
-
-.dark-mode .link__hover-effect--white {
-  color: white;
-}
-
-.dark-mode .scroll__icon,
-.dark-mode .scroll,
-.dark-mode .scroll__icon::after {
-  border: 2px solid white;
-  border-radius: 40%;
-}
-
-.dark-mode .modal__overlay-loading {
-  background-color:green;
-}
-
-.dark-mode .modal__overlay-success {
-  background-color: #f06049;
-  color: white;
-} 
-
-.dark-mode .footera,
-.dark-mode .footer__logo--popper,
-.dark-mode .contacts,
-.dark-mode .copyright,
-.dark-mode .link__name-black {
-  color: black;
-  background-color: white;
-}
-
-
-.dark-mode .mail__btn {
-  background-color: white;
-  color: black;
-}
-/* ----------------------------------------------------------DARK MODE------------------------------------------------------- */ */
-
-
-
-/* -----------------------------------------------------------BASIC CSS------------------------------------------------------- */ */
 
 .user__name {
   margin-top: 50px;
@@ -265,7 +259,7 @@ h1 {
   width: 32px;
   height: 32px;
   font-size: 14px;
-  margin-right: 12px;
+  margin-right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +338,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   /* border: 3px dotted red; */
-  width:100%;
+  width: 100%;
   margin: 0 20px;
   padding: 0 20px;
   border-bottom: 2px solid black;
@@ -374,12 +368,10 @@ h1 {
 .contact {
   min-height: 100vh;
   /* border: 3px solid blue; */
-
 }
 
 .intro {
-/* border: 3px solid blue; */
-
+  /* border: 3px solid blue; */
 }
 
 .introbox {
@@ -421,19 +413,21 @@ h1 {
   border: none;
   background-color: #242424;
   color: white;
-  position: absolute;
+  position: fixed;
   /* we are going to move this along the page with scrolling */
   bottom: 32px;
   /* it is 32 px away from the bottom so moving up from the bottom*/
   right: 40px;
   /* now it is 40 px away from teh right side*/
+  z-index: 100; /* We want to make sure this always shows up */
+  box-shadow: 0 12px 30px 0 #f06049;
 }
 
 .scroll {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* We are going to center this */
   /* WE had to use this because we only used one value */
   /* We had to do this because we used positon absolute
                               and only centering to the left*/
@@ -457,7 +451,7 @@ h1 {
   width: 4px;
   height: 6px;
   border-radius: 2px;
-  animation: scroll 1000ms infinite alternate-reverse;
+  animation: scroll 1000ms infinite alternate-reverse; /*alternate reverse gives the slow bounce*/
   /*alternate reverse gives the slow bounce*/
 }
 
@@ -523,9 +517,8 @@ h1 {
   transition: all 300ms ease;
 }
 
-.modal__half-left {
-  display: flex;
-  flex-direction: column;
+.modal__sub {
+  font-size: 20px;
 }
 
 .modal__half-right {
@@ -533,12 +526,11 @@ h1 {
   flex-direction: column;
   background-color: black;
   color: white;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
-.modal__contact{
+.modal__contact {
   transform: translateX(110%);
-
 }
 
 .modal__about {
@@ -629,7 +621,7 @@ h1 {
 }
 
 .information {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -637,23 +629,23 @@ h1 {
   /* border: 2px dotted orangered; */
 }
 
-.lang__img {
-  height: 70px;
-  width: 100%;
-  max-width: 70px;
-  display: flex;
-  margin-right: 5px;
-  transition: all ease 500ms ease;
+.lang__pic {
+  height: 60px;
+  width: auto;
+  max-width: 60px;
+  display: block;
+  margin: 0 auto;
 }
 
-.lang__img:hover {
-  transform: scale(1.3);
+.lang__pic:hover {
+  transform: scale(1.1);
   filter: brightness(70%);
   transform: scale(0.9);
 }
 
 .lang__name {
   font-weight: 500;
+  font-size: 15px;
   display: none;
   transition: all ease 500ms;
 }
@@ -661,12 +653,17 @@ h1 {
 .langs {
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: center; */
+  align-content: center;
+  align-items: center;
+  padding-left: 40px;
+  /* border: 3px dotted purple; */
 }
 
 .modal__langs {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  text-align: center;
   /* border: 3px dotted purple; */
 }
 
@@ -1007,113 +1004,84 @@ width = 80vw */
   left: 80vw;
 }
 
-
 /* ------------------------------------------PROJECT CSS----------------------------------------------------- */
 
-
 /*------------------------------------------MAKING WEBSITE RESPONSIVE----------------------------------------------------- */
-@media (max-width: 880px){
-
+@media (max-width: 880px) {
   .form__item {
     font-size: 20px;
     padding-left: 10px;
   }
 
-  .contact__btn  {
+  .contact__btn {
     margin-left: 10px;
-  
+  }
+}
+
+/* This is going to be for smartphones, tables, and large smartphones */
+
+@media (max-width: 768px) {
+  .intro__txt {
+    font-size: 20px;
   }
 
-}
+  .btn__div {
+    padding-left: 10px;
+  }
 
+  .introbox {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
+  }
 
+  .social__link {
+    margin-left: 30px;
+  }
 
+  .modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    border-radius: 0;
+  }
 
-@media (max-width: 768px) /* This is going to be for smartphones, tables, and large smartphones */
-{
+  .modal__half {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .modal__about {
+    padding: 20px;
+  }
+
+  .modal__para {
+    font-size: 18px;
+    text-align: start;
+  }
+
+  .intro__txt2 {
+    font-size: 18px;
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .introbox {
+    padding-left: 80px;
+  }
+
+  .form__label {
+    font-size: 20px;
+  }
   
-
- /* Add this closing curly brace */
-
- .intro__txt {
-  font-size: 20px;
+  .modal__contact {
+    padding-top: 120px;
+  }
 }
-
-.btn__div {
-
-  padding-left: 10px;
-}
-
-.introbox {
- font-size: 40px;
- display: flex;
- justify-content: center;
-  align-content: center;
-  /* align-items: center; */
-}
-
-.social__link {
-  margin-left: 30px;
-}
-
-
-.modal{
-  top: 0;
-  left: 0;
-  width: 100%;
- height: auto;
- flex-direction: column-reverse;
- border-radius: 0;
-}
-
-.modal__half {
-  width: 100%;
-  flex-direction: column;
-}
-
-.modal__about {
-  padding: 20px;
-}
-
-.modal__para {
-  font-size: 18px;
-  text-align: start;
-}
-
-.intro__txt2 {
-  font-size: 18px;
-  /* text-align: center; */
-  width: 100%;
-}
-
-.introbox {
-  padding-left: 80px;
-}
-
-.lang__img {
-  height: 50px;
-  width: 50px;
-  margin-left: 15px;
-}
-
-.lang__name {
-  font-size: 12px;
-}
-
-.form__label {
-  font-size: 20px;
-}
-.modal__contact {
-  padding-top: 120px;
-}
-
-.modal__langs{
-  display: flex;
-  justify-content: center;
-  align-content: center;  
-  align-items: center;
-}
-
 /*----- small phones----*/
 
 @media (max-width: 480px) {
@@ -1121,10 +1089,9 @@ width = 80vw */
     font-size: 18px;
   }
 
-.introbox { 
-  padding-left: 0;
-}
-
+  .introbox {
+    padding-left: 0;
+  }
 
   .intro__txt2 {
     font-size: 14px;
@@ -1138,16 +1105,6 @@ width = 80vw */
     font-size: 16px;
   }
 
-  .lang__img {
-    height: 40px;
-    width: 40px;
-    margin-left: 10px;
-  }
-
-  .lang__name {
-    font-size: 10px;
-  }
-
   .form__label {
     font-size: 16px;
     padding-left: 10px;
@@ -1157,19 +1114,12 @@ width = 80vw */
     padding-top: 100px;
   }
 
-  .modal__langs {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-  .some__proj{  
+  .some__proj {
     font-size: 24px;
-  
   }
 
   .link__name-about {
-display: none;
+    display: none;
   }
 
   .nav__bar {
@@ -1185,41 +1135,46 @@ display: none;
   }
 
   .contact__input-name {
- max-height: 80lvh;
+    max-height: 80lvh;
   }
 
   .projinfo {
- display: flex;
- justify-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .proj__paragraph {
+    display: none;
+  }
+
+  .proj__title {
+    font-size: 40px;
+  }
+
+  .proj__subtitle {
+    font-size: 24px;
+  }
+
+  .fa-github2,
+  .fa-link2 {
+    font-size: 32px;
+    padding-top: 15px;
+  }
+
+  .projinfo {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  .modal__half-right {
+    padding-top: 40px;
+  }
+
+  .modal__title--about {
+    font-size: 20px;
+  }
 }
-
-.proj__paragraph {
-
-  display: none;
-}
-
-.proj__title {
-  font-size: 40px;
-
-}
-
-.proj__subtitle {
-  font-size: 24px;
-}
-
-.fa-github2,
-.fa-link2
-{
-  font-size: 32px;
-  padding-top: 15px;
-}
-
-.projinfo {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-}
-
 
 /*------------------------------------------MAKING WEBSITE RESPONSIVE----------------------------------------------------- */
